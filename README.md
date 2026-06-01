@@ -1,4 +1,6 @@
 # 🤖 AI Resume Analyzer & Job Matcher
+## 🌐 Live Demo
+👉 [Try it here](https://resume-analyzer-naga.netlify.app)
 
 An AI-powered web app that analyzes your resume and matches you with top jobs using **OpenAI GPT-4o-mini**, **FAISS vector search**, **FastAPI**, and **React**.
 
