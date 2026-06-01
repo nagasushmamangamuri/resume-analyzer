@@ -17,7 +17,7 @@ function App() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("http://localhost:8000/analyze", {
+      const res = await fetch("https://resume-analyzer-backend-dypm.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
@@ -25,7 +25,7 @@ function App() {
       if (data.error) throw new Error(data.error);
       setAnalysis(data);
 
-      const matchRes = await fetch("http://localhost:8000/match", {
+      const matchRes = await fetch("https://resume-analyzer-backend-dypm.onrender.com/match", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resume_text: data.resume_text }),
